@@ -21,4 +21,9 @@ puts "Creating Concerts..."
 # ****************************************************************
 # Create concerts Here
 
+Concert.create(
+    band_id:Band.all.sample.id,
+    venue_id:Venue.all.sample.id
+    data: "1994-12-16"
+)
 puts "Seeding done!"
